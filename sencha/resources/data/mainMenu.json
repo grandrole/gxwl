@@ -1,0 +1,32 @@
+﻿	[
+		{
+			"code": "scareBuying", 
+			"name": "限量抢购", 
+			"icon": "sencha/resources/images/zhekou.gif"
+		},
+		{
+			"code": "buyGoods",
+			"name": "购买商品",
+			"icon": "sencha/resources/images/shangpin.gif"
+		},
+		{
+			"code": "shoppingCart",
+			"name": "购物车",
+			"icon": "sencha/resources/images/gouwuche.gif"
+		},
+		{
+			"code":  "dispatching",
+			"name":  "物流配送",
+			"icon": "sencha/resources/images/wuliu.gif"
+		},
+		{
+			"code":  "contact",
+			"name":  "联系信息",
+			"icon":  "sencha/resources/images/lianxi.gif"
+		},
+		{
+			"code": "Setting", 
+			"name": "系统设置", 
+			"icon": "sencha/resources/images/settings2x.png"
+		}
+	]

@@ -1,0 +1,251 @@
+{
+    "name": "gxwl",
+    "settings": {
+        "urlPrefix": "http://localhost/gxwl",
+        "spacesToIndent": 4,
+        "exportPath": "C:/AppCan/ADK/emulator/disk/widgetone/widgetapp/test/android_iphone",
+        "sdkPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "codeGenFormat": "Class",
+        "senchaIoKey": "",
+        "senchaIoPath": "http://extjs.cachefly.net/designer/IO/",
+        "instantiateStore": true,
+        "saveOnDeploy": false,
+        "appName": "MyApp",
+        "buildShouldOverwriteIndex": true
+    },
+    "xdsVersion": "2.2.2",
+    "xdsBuild": 991,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "touch20",
+    "topInstanceFileMap": {
+        "059f854f-fda4-44ee-bb94-4b370f1a7c86": {
+            "paths": [
+                "metadata/model/extensionModel",
+                "app/model/override/extensionModel.js",
+                "app/model/extensionModel.js"
+            ],
+            "className": "extensionModel"
+        },
+        "5ddb0204-b1b9-4801-8630-7de556c87f4c": {
+            "paths": [
+                "metadata/store/extensionStore",
+                "app/store/override/extensionStore.js",
+                "app/store/extensionStore.js"
+            ],
+            "className": "extensionStore"
+        },
+        "5d04aa02-c5a2-4dc2-b872-d7830feda465": {
+            "paths": [
+                "metadata/store/systemVarStore",
+                "app/store/override/systemVarStore.js",
+                "app/store/systemVarStore.js"
+            ],
+            "className": "systemVarStore"
+        },
+        "63e7141a-c612-465d-abbe-f6792544e80f": {
+            "paths": [
+                "metadata/model/systemVarModel",
+                "app/model/override/systemVarModel.js",
+                "app/model/systemVarModel.js"
+            ],
+            "className": "systemVarModel"
+        },
+        "5877b07d-a159-4cbc-8ec3-a6f6b176d44e": {
+            "paths": [
+                "metadata/controller/settingController",
+                "app/controller/override/settingController.js",
+                "app/controller/settingController.js"
+            ],
+            "className": "settingController"
+        },
+        "fb9cf29d-470f-41d4-9ed5-3f81115fdc16": {
+            "paths": [
+                "metadata/controller/mainListController",
+                "app/controller/override/mainListController.js",
+                "app/controller/mainListController.js"
+            ],
+            "className": "mainListController"
+        },
+        "86a3af3c-302d-415a-b6fe-0d6178f62e6e": {
+            "paths": [
+                "metadata/view/executeView",
+                "app/view/override/executeView.js",
+                "app/view/executeView.js"
+            ],
+            "className": "executeView"
+        },
+        "e2814f63-f7f9-4802-95fb-6ec70fca4a57": {
+            "paths": [
+                "metadata/controller/loginController",
+                "app/controller/override/loginController.js",
+                "app/controller/loginController.js"
+            ],
+            "className": "loginController"
+        },
+        "9e412b79-a9b4-484c-a4aa-bd6790d7c496": {
+            "paths": [
+                "metadata/view/LoginForm",
+                "app/view/override/LoginForm.js",
+                "app/view/LoginForm.js"
+            ],
+            "className": "LoginForm"
+        },
+        "d4ab38ba-7f10-4652-aee2-e3f9ca0340e2": {
+            "paths": [
+                "metadata/view/mainView",
+                "app/view/override/mainView.js",
+                "app/view/mainView.js"
+            ],
+            "className": "mainView"
+        },
+        "8d43e55e-ba49-4b67-a0e3-e531cf8a0fe6": {
+            "paths": [
+                "metadata/controller/webServiceController",
+                "app/controller/override/webServiceController.js",
+                "app/controller/webServiceController.js"
+            ],
+            "className": "webServiceController"
+        },
+        "723b621d-352d-461c-93f3-5f8ba6b10a3d": {
+            "paths": [
+                "metadata/store/productStore",
+                "app/store/override/productStore.js",
+                "app/store/productStore.js"
+            ],
+            "className": "productStore"
+        },
+        "75dc59d9-f10a-4301-bca8-0dfb5471c296": {
+            "paths": [
+                "metadata/model/productModel",
+                "app/model/override/productModel.js",
+                "app/model/productModel.js"
+            ],
+            "className": "productModel"
+        },
+        "dcc7d33c-f511-47a0-8289-1a8acc0fe89c": {
+            "paths": [
+                "metadata/controller/productController",
+                "app/controller/override/productController.js",
+                "app/controller/productController.js"
+            ],
+            "className": "productController"
+        },
+        "66d2c6b7-8b3f-45d6-900a-d6d36ac8b8c6": {
+            "paths": [
+                "metadata/view/settingView",
+                "app/view/override/settingView.js",
+                "app/view/settingView.js"
+            ],
+            "className": "settingView"
+        },
+        "0b08ac14-f90b-4747-a35c-2f200ba9d15f": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "a16da536-e3a8-4b32-a6f7-58194c0d2bb3": {
+            "paths": [
+                "metadata/view/productView",
+                "app/view/override/productView.js",
+                "app/view/productView.js"
+            ],
+            "className": "productView"
+        },
+        "29abb02d-ab4a-4153-8c33-1e0ad2b73430": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        },
+        "588b7624-3289-4aca-83c1-2f2788a50409": {
+            "paths": [
+                "metadata/resource/GoogleMapsAPI"
+            ],
+            "className": "GoogleMapsAPI"
+        },
+        "5fea1ae2-a0ba-4f88-b4f1-2b2452169f5c": {
+            "paths": [
+                "metadata/view/productDetailView",
+                "app/view/override/productDetailView.js",
+                "app/view/productDetailView.js"
+            ],
+            "className": "productDetailView"
+        },
+        "91af4ad5-1c26-462e-bb8a-5cadb55a62ee": {
+            "paths": [
+                "metadata/model/orderDetailModel",
+                "app/model/override/orderDetailModel.js",
+                "app/model/orderDetailModel.js"
+            ],
+            "className": "orderDetailModel"
+        },
+        "f70c930a-0ed9-4192-85e7-8ad628a076bb": {
+            "paths": [
+                "metadata/view/shoppingCartView",
+                "app/view/override/shoppingCartView.js",
+                "app/view/shoppingCartView.js"
+            ],
+            "className": "shoppingCartView"
+        },
+        "ef14239a-2dcc-41dd-89a2-e5aa17b3f275": {
+            "paths": [
+                "metadata/controller/orderController",
+                "app/controller/override/orderController.js",
+                "app/controller/orderController.js"
+            ],
+            "className": "orderController"
+        },
+        "07bc4925-b535-4aae-9d2f-8d74dcc40768": {
+            "paths": [
+                "metadata/store/orderDetailStore",
+                "app/store/override/orderDetailStore.js",
+                "app/store/orderDetailStore.js"
+            ],
+            "className": "orderDetailStore"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "9e412b79-a9b4-484c-a4aa-bd6790d7c496",
+            "d4ab38ba-7f10-4652-aee2-e3f9ca0340e2",
+            "86a3af3c-302d-415a-b6fe-0d6178f62e6e",
+            "66d2c6b7-8b3f-45d6-900a-d6d36ac8b8c6",
+            "a16da536-e3a8-4b32-a6f7-58194c0d2bb3",
+            "5fea1ae2-a0ba-4f88-b4f1-2b2452169f5c",
+            "f70c930a-0ed9-4192-85e7-8ad628a076bb"
+        ],
+        "store": [
+            "5ddb0204-b1b9-4801-8630-7de556c87f4c",
+            "5d04aa02-c5a2-4dc2-b872-d7830feda465",
+            "723b621d-352d-461c-93f3-5f8ba6b10a3d",
+            "07bc4925-b535-4aae-9d2f-8d74dcc40768"
+        ],
+        "controller": [
+            "fb9cf29d-470f-41d4-9ed5-3f81115fdc16",
+            "8d43e55e-ba49-4b67-a0e3-e531cf8a0fe6",
+            "e2814f63-f7f9-4802-95fb-6ec70fca4a57",
+            "dcc7d33c-f511-47a0-8289-1a8acc0fe89c",
+            "5877b07d-a159-4cbc-8ec3-a6f6b176d44e",
+            "ef14239a-2dcc-41dd-89a2-e5aa17b3f275"
+        ],
+        "model": [
+            "059f854f-fda4-44ee-bb94-4b370f1a7c86",
+            "63e7141a-c612-465d-abbe-f6792544e80f",
+            "75dc59d9-f10a-4301-bca8-0dfb5471c296",
+            "91af4ad5-1c26-462e-bb8a-5cadb55a62ee"
+        ],
+        "resource": [
+            "0b08ac14-f90b-4747-a35c-2f200ba9d15f",
+            "29abb02d-ab4a-4153-8c33-1e0ad2b73430",
+            "588b7624-3289-4aca-83c1-2f2788a50409"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

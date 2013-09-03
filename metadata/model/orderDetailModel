@@ -1,0 +1,74 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "orderDetailModel"
+    },
+    "designerId": "91af4ad5-1c26-462e-bb8a-5cadb55a62ee",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "designerId": "28f6a663-bfdc-4eeb-bc3f-8cebbb84c733"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "goodsID"
+            },
+            "designerId": "65934908-114c-4b76-ac85-06d9d5a3c402"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "buyCount"
+            },
+            "designerId": "a9c29701-44ac-415d-855c-0d488380b548"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "unitPrice"
+            },
+            "designerId": "b1bfc5da-aa9a-479d-b9f2-0a6eba4aa696"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "goodsName"
+            },
+            "designerId": "f4e719d6-73cf-44c2-92fb-4e6e5822be40"
+        }
+    ]
+}

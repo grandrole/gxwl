@@ -1,0 +1,14 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "css",
+        "url": "sencha/resources/css/phone.css",
+        "id": "app"
+    },
+    "designerId": "29abb02d-ab4a-4153-8c33-1e0ad2b73430"
+}

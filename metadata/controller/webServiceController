@@ -1,0 +1,77 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "webServiceController"
+    },
+    "designerId": "8d43e55e-ba49-4b67-a0e3-e531cf8a0fe6",
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "service",
+                "designer|params": [
+                    "params,callbackFunc"
+                ],
+                "implHandler": [
+                    "// Add default params\r",
+                    "//params.format = 'json';\r",
+                    "\r",
+                    "console.log(params.url);\r",
+                    "\r",
+                    "var urlStr = systemConfig.System_ProxyRootURL;\r",
+                    "if (params.url != null) {\r",
+                    "    urlStr = params.url;\r",
+                    "}\r",
+                    "\r",
+                    "console.log(urlStr);\r",
+                    "\r",
+                    "// convert from milisecond to second\r",
+                    "var timeout = systemConfig.System_ProxyTimeout * 1000;\r",
+                    "if(params.timeout !== null)\r",
+                    "timeout = params.timeout * 1000;\r",
+                    "\r",
+                    "//var callbackKey = 'callback' + Ext.id(null, '_');\r",
+                    "try{\r",
+                    "    var mask = null;\r",
+                    "    if(params.mask != null) \r",
+                    "    mask = params.mask;\r",
+                    "\r",
+                    "    /* Todo 处理\r",
+                    "    jsonPTimeout(mask, timeout, function(){\r",
+                    "    Ext.Msg.alert('Server', 'JSONP: Request Timeout!');\r",
+                    "    });\r",
+                    "    */\r",
+                    "\r",
+                    "    // Remove some params\r",
+                    "    params.mask = '';\r",
+                    "\r",
+                    "    Ext.Ajax.request({\r",
+                    "        withCredentials: true,\r",
+                    "        disableCaching: false,\r",
+                    "        useDefaultXhrHeader: false,\r",
+                    "        url: urlStr,\r",
+                    "        params: params,\r",
+                    "        success:  callbackFunc\r",
+                    "\r",
+                    "    });\r",
+                    "}catch(ex){\r",
+                    "    //removeAllXmask();\r",
+                    "    console.log('Ext.util.JSONP.request throw an exception:');\r",
+                    "    console.log(ex);\r",
+                    "}\t"
+                ]
+            },
+            "designerId": "fc45ed40-989a-4602-95e0-22db1ab9e00c"
+        }
+    ]
+}

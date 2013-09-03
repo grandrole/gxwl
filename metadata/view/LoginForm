@@ -1,0 +1,182 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "title": "登录",
+        "id": "LoginFormID",
+        "designer|userClassName": "LoginForm",
+        "designer|userAlias": "loginform"
+    },
+    "designerId": "9e412b79-a9b4-484c-a4aa-bd6790d7c496",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "title",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "title": "  系统登录  "
+            },
+            "designerId": "76a5189e-0b7b-40bc-aee6-bbbc517e3685"
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom",
+                "id": null
+            },
+            "designerId": "21a4554b-a41f-474c-ba88-7d70533995a2",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": null,
+                        "itemId": "loginSettingBtn",
+                        "ui": "confirm",
+                        "text": "设置"
+                    },
+                    "designerId": "9ca44b23-3c1d-4ac7-a853-ae872f07ca69"
+                },
+                {
+                    "type": "Ext.Spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "designerId": "aac83556-1eef-46e5-9ba1-ea7177cc73d7"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": null,
+                        "itemId": "loginLoginBtn",
+                        "ui": "confirm",
+                        "text": "登录"
+                    },
+                    "designerId": "5941b93c-0cb5-4aea-82cc-30c797c08eae"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": null,
+                "defaults": [
+                    "labelAlign: 'left',",
+                    "\t\t\t\tlabelWidth: '40%',",
+                    "\t\t\t\trequired: false,",
+                    "\t\t\t\tuseClearIcon: true,",
+                    "\t\t\t\tautoCapitalize : false"
+                ],
+                "instructions": "请选择登录方式，输入手机号码或Email地址和密码后，点击“登录\"按钮。如果您是第一次使用本系统，请点击”设置“按钮",
+                "title": "登录帐号"
+            },
+            "designerId": "78a1a9c3-1a99-462c-a4c9-3d3a5d480c30",
+            "cn": [
+                {
+                    "type": "Ext.field.Select",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": null,
+                        "itemId": null,
+                        "label": "登录方式",
+                        "name": "loginWay",
+                        "options": [
+                            "[",
+                            "{text: '手机号码', value: 'mobilePhone'},",
+                            "{text: 'Email', value: 'email'}",
+                            "]"
+                        ]
+                    },
+                    "designerId": "d92171e6-41a2-4b2c-a9b3-ef7777eced1c"
+                },
+                {
+                    "type": "Ext.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": null,
+                        "itemId": "mobilePhone",
+                        "label": "手机号码",
+                        "name": "mobilePhone"
+                    },
+                    "designerId": "17444650-76a6-4577-ad4c-cf36b30824af"
+                },
+                {
+                    "type": "Ext.field.Email",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "hidden": true,
+                        "id": null,
+                        "itemId": "email",
+                        "label": "Email",
+                        "name": "email",
+                        "placeHolder": "email@example.com"
+                    },
+                    "designerId": "7eeea15a-1d29-4375-adb3-4f5e0b3bd6d2"
+                },
+                {
+                    "type": "Ext.field.Password",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": null,
+                        "itemId": "passwd",
+                        "label": "密码",
+                        "name": "passwd"
+                    },
+                    "designerId": "325bda0f-7905-4642-b731-e5c41792e8b8"
+                }
+            ]
+        }
+    ]
+}

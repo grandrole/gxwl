@@ -1,0 +1,29 @@
+﻿[
+	{
+		"id":    	"00003845",
+		"name":		"利润商贸",
+		"address":	"北京市海淀区中关村大街38号",
+		"longitude": "39.97",
+		"latitude": "116.32",
+		"contact":  "王亚军",
+		"phone":    "10086",
+		"email":    "wyj@163.com",
+		"visitPathId": 1,
+		"visitStatus": 0
+		
+	},
+	{
+		"id":       "000000023",
+		"name":		"月亮城批发",
+		"address":  "黄寺大街23号",
+		"longitude": "39.96",
+		"latitude": "116.38",
+		"contact":	"周玉良",
+		"phone":    "10086",
+		"email":    "zyl@sina.com",
+		"visitPathId": 2,
+		"visitStatus": 0
+	}
+		
+]
+		

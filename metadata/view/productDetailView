@@ -1,0 +1,102 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": "productDetailViewID",
+        "designer|userClassName": "productDetailView"
+    },
+    "designerId": "5fea1ae2-a0ba-4f88-b4f1-2b2452169f5c",
+    "cn": [
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "商品信息"
+            },
+            "designerId": "1c2be024-94ee-4faa-9365-609e2b1e0eed",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "名称",
+                        "name": "productName",
+                        "readOnly": true
+                    },
+                    "designerId": "ca9caacb-d4f2-4e82-9a07-ec5db50685ee"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "编号",
+                        "name": "productSKU",
+                        "readOnly": true
+                    },
+                    "designerId": "a97aa598-5065-4acc-a360-49cd1d45ff8a"
+                },
+                {
+                    "type": "Ext.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "价格",
+                        "name": "productSalePrice",
+                        "readOnly": true
+                    },
+                    "designerId": "5938db7c-f566-4b35-b343-6b5a9855ba41"
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.Spinner",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "label": "购买数量",
+                "labelWidth": "40%",
+                "name": "fsBuyCount",
+                "required": true,
+                "value": null,
+                "defaultValue": 5,
+                "increment": 1
+            },
+            "designerId": "a5499134-12c0-4c20-9194-43081a16f5de"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "label": "小计",
+                "name": "txtSubTotal"
+            },
+            "designerId": "51b5df17-4f0a-428f-82a9-86f7659f5123"
+        }
+    ]
+}

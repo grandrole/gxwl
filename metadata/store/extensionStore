@@ -1,0 +1,41 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "data": null,
+        "model": "extensionModel",
+        "storeId": "extensionStoreID",
+        "designer|userClassName": "extensionStore"
+    },
+    "designerId": "5ddb0204-b1b9-4801-8630-7de556c87f4c",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "sencha/resources/data/mainMenu.json"
+            },
+            "designerId": "2ff87242-ec7e-46dd-82af-bcaece1fa58c",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "a95e05d4-d394-4aeb-92ac-df7f6b279477"
+                }
+            ]
+        }
+    ]
+}

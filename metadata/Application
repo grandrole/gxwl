@@ -1,0 +1,65 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "extensionModel",
+            "systemVarModel",
+            "productModel",
+            "orderDetailModel"
+        ],
+        "stores": [
+            "extensionStore",
+            "productStore",
+            "orderDetailStore"
+        ],
+        "views": [
+            "executeView",
+            "LoginForm",
+            "mainView",
+            "settingView",
+            "productView",
+            "productDetailView",
+            "shoppingCartView"
+        ],
+        "controllers": [
+            "settingController",
+            "mainListController",
+            "loginController",
+            "webServiceController",
+            "productController",
+            "orderController"
+        ],
+        "icon": [
+            "data/images/icon.png"
+        ],
+        "name": "MyApp",
+        "isIconPrecomposed": null,
+        "startupImage": [
+            "{\"320x460\":\"data/images/phone_startup.png\",\"768x1004\":\"data/images/table_startup.png\"}"
+        ]
+    },
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "loginAccount = null;\r",
+                    "systemConfig = null;"
+                ]
+            },
+            "designerId": "2ef4a9eb-b84f-4bb1-97c2-08a291e2799d"
+        }
+    ]
+}

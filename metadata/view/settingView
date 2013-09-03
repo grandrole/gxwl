@@ -1,0 +1,107 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "settingView",
+        "designer|userAlias": "settingView"
+    },
+    "designerId": "66d2c6b7-8b3f-45d6-900a-d6d36ac8b8c6",
+    "cn": [
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom"
+            },
+            "designerId": "20e88be1-b783-4139-810e-1c09bcfbfa13",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "settingSaveBtn",
+                        "text": "保存"
+                    },
+                    "designerId": "4fb83fc4-1faf-40d1-969f-dd78073b7b37"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "settingCancelBtn",
+                        "text": "取消"
+                    },
+                    "designerId": "52ee0bbb-6aa8-44d1-ae8b-68c82ede778a"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "服务器设置"
+            },
+            "designerId": "629b4edd-4f2e-47e9-93ce-9302a54d9a50",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "地址："
+                    },
+                    "designerId": "6812bb88-d7c7-4a12-942a-3f05a5bfaa79"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "登录配置"
+            },
+            "designerId": "3b8303b5-f975-4e40-aef7-1e4c7efe6fd9",
+            "cn": [
+                {
+                    "type": "Ext.field.Toggle",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "记住密码"
+                    },
+                    "designerId": "5a541afe-cf9f-4fcc-b143-9557ae1a5385"
+                }
+            ]
+        }
+    ]
+}

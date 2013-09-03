@@ -1,0 +1,36 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "model": "orderDetailModel",
+        "storeId": "orderDetailStoreID",
+        "designer|userClassName": "orderDetailStore"
+    },
+    "designerId": "07bc4925-b535-4aae-9d2f-8d74dcc40768",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "designerId": "5a998869-2d29-49cd-9d1b-1414edf7bd5c",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "816793c0-d8ae-4c4d-98d5-ea3e4c9807c1"
+                }
+            ]
+        }
+    ]
+}

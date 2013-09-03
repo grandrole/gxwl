@@ -1,0 +1,79 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "mainListController"
+    },
+    "designerId": "fb9cf29d-470f-41d4-9ed5-3f81115fdc16",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "loginForm",
+                "selector": "#loginFormID"
+            },
+            "designerId": "39737f72-b705-41c0-a292-755a25f22b22"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onMainListListItemTap",
+                "implHandler": [
+                    "\r",
+                    "if (record.data.code == 'scareBuying') {\r",
+                    "    //折扣商品\r",
+                    "}\r",
+                    "\r",
+                    "if (record.data.code == \"buyGoods\") {\r",
+                    "    var detailForm = Ext.create('MyApp.view.productDetailView');\r",
+                    "    this.getApplication().getController('productController').productSelected(detailForm);\r",
+                    "}\r",
+                    "if (record.data.code == \"shoppingCart\") {\r",
+                    "    this.getApplication().getController('orderController').displayShoppingCartView();\r",
+                    "}\r",
+                    "\r",
+                    "if (record.data.code == \"dispatching\") {\r",
+                    "}\r",
+                    "\r",
+                    "if (record.data.code == \"contact\") {\r",
+                    "}\r",
+                    "\r",
+                    "if (record.data.code == \"Setting\") {\r",
+                    "\r",
+                    "}"
+                ],
+                "name": "itemtap",
+                "designer|targetType": "Ext.dataview.DataView",
+                "designer|controlQuery": "#MainListList"
+            },
+            "designerId": "d467d579-212b-4783-a887-7daa7428862f"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "executeView",
+                "selector": "#executeViewID"
+            },
+            "designerId": "06b85cb3-91de-4b7a-9372-946cdad6ce31"
+        }
+    ]
+}

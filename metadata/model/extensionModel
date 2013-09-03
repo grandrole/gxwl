@@ -1,0 +1,103 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "extensionModel"
+    },
+    "designerId": "059f854f-fda4-44ee-bb94-4b370f1a7c86",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id",
+                "type": "int"
+            },
+            "designerId": "ce14fa49-1a86-4eea-b2b1-6f5a2e13e94e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "code",
+                "type": "string"
+            },
+            "designerId": "84026618-8895-4068-8c7f-fdf347977d7c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name",
+                "type": "string"
+            },
+            "designerId": "a2814c9a-a2d4-41d6-97c8-32b5274d9c19"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "icon",
+                "type": "string"
+            },
+            "designerId": "00f3efdc-825a-4c8c-a145-076913d1acb6"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "description",
+                "type": "string"
+            },
+            "designerId": "9837ce6e-6069-489f-9fcd-c0d87995db5e"
+        },
+        {
+            "type": "presencevalidation",
+            "reference": {
+                "name": "validations",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "field": "name"
+            },
+            "designerId": "f11209f5-3676-49c0-82ec-d3dce0942a17"
+        },
+        {
+            "type": "presencevalidation",
+            "reference": {
+                "name": "validations",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "field": "code"
+            },
+            "designerId": "7f9d1dff-541e-41c4-b695-46a10c90cac9"
+        }
+    ]
+}

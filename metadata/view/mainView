@@ -1,0 +1,74 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "title": "供销超市",
+        "id": "MainListID",
+        "designer|userClassName": "mainView",
+        "designer|userAlias": "mainView",
+        "layout": "vbox"
+    },
+    "designerId": "d4ab38ba-7f10-4652-aee2-e3f9ca0340e2",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "title",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "Ext.dataview.DataView",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "tpl": null,
+                "layout|flex": 1,
+                "docked": null,
+                "id": "MainListList",
+                "itemId": "mydataview2",
+                "ui": "light",
+                "inline": [
+                    "true"
+                ],
+                "store": "extensionStoreID",
+                "useComponents": false
+            },
+            "designerId": "46ebb700-ec7d-42ca-a0d2-143fd508249d",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "tpl",
+                    "type": "string"
+                }
+            ],
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "implHandler": [
+                            "<div class=\"extension\">\r",
+                            "\t<div class=\"icon\"><img src=\"{icon}\" /></div>\r",
+                            "\t<div class=\"name\">{name}</div>\r",
+                            "</div>"
+                        ],
+                        "designer|displayName": "itemTpl"
+                    },
+                    "designerId": "76773fbe-cf71-4f9c-b4ab-e3702fd226d1"
+                }
+            ]
+        }
+    ]
+}

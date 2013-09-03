@@ -1,0 +1,26 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "model": "systemVarModel",
+        "storeId": "systemVarStoreID",
+        "designer|userClassName": "systemVarStore"
+    },
+    "designerId": "5d04aa02-c5a2-4dc2-b872-d7830feda465",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "designerId": "8fc88eba-351b-415c-8318-f3ff860dfc77"
+        }
+    ]
+}

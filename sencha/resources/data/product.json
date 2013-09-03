@@ -1,0 +1,318 @@
+﻿{
+	"items":[
+		{
+			"product_name":		"可口可乐",
+			"leaf": false,
+			"items": [
+					{
+					"product_name":		 "可口可乐",
+					"leaf": false,
+					"items": [
+						{
+							"product_name":		"可乐2.5L",
+							"product_img":		"",
+							"product_sku":      "00000000001",
+							"product_price":    "4.2",
+							"weigth_unit_display": "箱",	
+							"weigth_unit_display": "箱",
+							"leaf":    true
+							
+						},
+						{
+							"product_name":		"可乐2.25L",
+							"product_img":		"",
+							"product_sku":      "00000000002",
+							"product_price":    "3.8",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					},
+					{
+						"product_name":		"可乐2.0L",
+						"product_img":		"",
+						"product_sku":      "00000000003",
+						"product_price":    "3.6",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					},
+					{
+						"product_name":		"可乐1.25L",
+						"product_img":		"",
+						"product_sku":      "00000000004",
+						"product_price":    "3.00",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					},
+					{
+						"product_name":		"可乐 600ML",
+						"product_img":		"",
+						"product_sku":      "00000000005",
+						"product_price":    "2.4",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					},
+					{
+						"product_name":		"可乐 355ML 罐",
+						"product_img":		"",
+						"product_sku":      "00000000007",
+						"product_price":    "2.4",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					},
+					{
+						"product_name":		"可乐 330ML 罐",
+						"product_img":		"",
+						"product_sku":      "00000000008",
+						"product_price":    "2.2",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					}
+				]
+			},
+			{
+				"product_name":		"健怡可乐",
+				"leaf": false,
+				"items":[
+					{
+						"product_name":		"健怡可乐 330ML 罐",
+						"product_img":		"",
+						"product_sku":      "00000000009",
+						"product_price":    "2.8",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					},
+					{
+						"product_name":		"健怡可乐 600ML",
+						"product_img":		"",
+						"product_sku":      "00000000010",
+						"product_price":    "3.2",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					}
+				]
+			},
+			{
+				"product_name":		"零度可乐",
+				"leaf": false,
+				"items":[
+					{
+						"product_name":		"零度可乐 330ML 罐",
+						"product_img":		"",
+						"product_sku":      "00000000011",
+						"product_price":    "2.8",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					},
+					{
+						"product_name":		"零度可乐 600ML",
+						"product_img":		"",
+						"product_sku":      "00000000012",
+						"product_price":    "3.2",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					}
+				]
+			}
+		]
+		
+	},
+	{
+		"product_name": "雪碧",
+		"leaf": false,
+		"items":[
+			{
+						"product_name":		"雪碧2.5L",
+						"product_img":		"",
+						"product_sku":      "00000000013",
+						"product_price":    "4.2",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					},
+					{
+						"product_name":		"雪碧2.25L",
+						"product_img":		"",
+						"product_sku":      "00000000014",
+						"product_price":    "3.8",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					},
+					{
+						"product_name":		"雪碧2.0L",
+						"product_img":		"",
+						"product_sku":      "00000000015",
+						"product_price":    "3.6",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					},
+					{
+						"product_name":		"雪碧1.25L",
+						"product_img":		"",
+						"product_sku":      "00000000016",
+						"product_price":    "3.00",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					},
+					{
+						"product_name":		"雪碧 600ML",
+						"product_img":		"",
+						"product_sku":      "00000000017",
+						"product_price":    "2.4",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					},
+					{
+						"product_name":		"雪碧 355ML 罐",
+						"product_img":		"",
+						"product_sku":      "00000000018",
+						"product_price":    "2.4",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					},
+					{
+						"product_name":		"雪碧 330ML 罐",
+						"product_img":		"",
+						"product_sku":      "00000000019",
+						"product_price":    "2.2",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					}
+		]
+	},
+	{
+		"product_name": "芬达",
+		"leaf": false,
+		"items":[
+			{
+				"product_name": "橙味芬达",
+				"items":[
+				{
+						"product_name":		"橙味芬达2.25L",
+						"product_img":		"",
+						"product_sku":      "00000000020",
+						"product_price":    "3.8",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					},
+					{
+						"product_name":		"橙味芬达2.0L",
+						"product_img":		"",
+						"product_sku":      "00000000021",
+						"product_price":    "3.6",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					},
+					{
+						"product_name":		"橙味芬达1.25L",
+						"product_img":		"",
+						"product_sku":      "00000000022",
+						"product_price":    "3.00",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					},
+					{
+						"product_name":		"橙味芬达 600ML",
+						"product_img":		"",
+						"product_sku":      "00000000023",
+						"product_price":    "2.4",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					}
+				]
+			},
+			{
+				"product_name": "苹果味芬达",
+				"leaf": false,
+				"items": [
+					{
+						"product_name":		"苹果味芬达2.25L",
+						"product_img":		"",
+						"product_sku":      "00000000024",
+						"product_price":    "3.8",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					},
+					{
+						"product_name":		"苹果味芬达2.0L",
+						"product_img":		"",
+						"product_sku":      "00000000025",
+						"product_price":    "3.6",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					},
+					{
+						"product_name":		"苹果味芬达1.25L",
+						"product_img":		"",
+						"product_sku":      "00000000026",
+						"product_price":    "3.00",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					},
+					{
+						"product_name":		"苹果味芬达 600ML",
+						"product_img":		"",
+						"product_sku":      "00000000027",
+						"product_price":    "2.4",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					}
+				]
+			}
+		]
+	},
+	{
+		"product_name": "醒目",
+		"leaf": false,
+		"items":[
+		{
+						"product_name":		"醒目2.25L",
+						"product_img":		"",
+						"product_sku":      "00000000028",
+						"product_price":    "3.8",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					},
+					{
+						"product_name":		"醒目2.0L",
+						"product_img":		"",
+						"product_sku":      "00000000029",
+						"product_price":    "3.6",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					},
+					{
+						"product_name":		"醒目1.25L",
+						"product_img":		"",
+						"product_sku":      "00000000030",
+						"product_price":    "3.00",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					},
+					{
+						"product_name":		"醒目 600ML",
+						"product_img":		"",
+						"product_sku":      "00000000031",
+						"product_price":    "2.4",
+						"weigth_unit_display": "箱",	"weigth_unit_display": "箱",
+							"leaf":    true
+					}
+		]
+	},
+	{
+		"product_name": "美汁源",
+		"leaf": false
+	},
+	{
+		"product_name": "雀巢茶",
+		"leaf": false
+	},
+	{
+		"product_name": "冰露",
+		"leaf": false
+	},
+	{
+		"product_name": "原叶",
+		"leaf": false
+	}
+]
+}
+	
+	

@@ -1,0 +1,346 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "stores": [
+            "systemVarStore"
+        ],
+        "designer|userClassName": "settingController"
+    },
+    "designerId": "5877b07d-a159-4cbc-8ec3-a6f6b176d44e",
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "readSystemConfig",
+                "implHandler": [
+                    "var rememberPassword = this.getValue('System_RememberPass', null);\r",
+                    "\r",
+                    "var url = this.getValue('System_ProxyRootURL', null);\r",
+                    "var loginWay = this.getValue('LoginWay', -1);\r",
+                    "var mobilePhone = this.getValue('System_mobilePhone', null);\r",
+                    "var emailValue = this.getValue('System_email', null);\r",
+                    "var password = this.getValue('System_Password', null);\r",
+                    "\r",
+                    "if (url == null)\r",
+                    "systemConfig = null;\r",
+                    "else\r",
+                    "systemConfig = {\r",
+                    "    System_ProxyRootURL: url,\r",
+                    "    System_mobilePhone: mobilePhone,\r",
+                    "    System_email: emailValue,\r",
+                    "    loginWay: loginWay,\r",
+                    "    System_Password: password,\r",
+                    "    System_RememberPass: rememberPassword\r",
+                    "};"
+                ]
+            },
+            "designerId": "c232344e-a772-4bed-b4c9-a8b9f108c8c5"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "save",
+                "designer|params": [
+                    "params"
+                ],
+                "implHandler": [
+                    "\r",
+                    "console.log(\"function save\");\r",
+                    "console.log(params);\r",
+                    "\r",
+                    "var remember = Number(params.System_RememberPass);\r",
+                    "this.removeAll();\r",
+                    "this.setValue('SettingSystem_DashboardRefreshTime', params.System_DashboardRevenuePeriod);\r",
+                    "this.setValue('System_DashboardRefreshTime', params.System_DashboardRefreshTime);\r",
+                    "this.setValue('System_LastOpenFlag', params.System_RememberLastOpen);\r",
+                    "this.setValue('System_LastOpenModule', '');\r",
+                    "this.setValue('System_ProxyRootURL', params.System_ProxyRootURL);\r",
+                    "this.setValue('System_ProxyTimeout', params.System_ProxyTimeout);\r",
+                    "this.setValue('System_RecordsPerPage', params.System_RecordsPerPage);\r",
+                    "this.setValue('System_RememberPass', remember);\r",
+                    "this.setValue('System_email', params.System_email);\r",
+                    "this.setValue('System_mobilePhone', params.System_mobilePhone);\r",
+                    "this.setValue('loginWay', params.loginWay);\r",
+                    "\r",
+                    "if (remember == 1)\r",
+                    "this.setValue('System_Password', params.System_Password);\r",
+                    "\r",
+                    "MyApp.loginPwd = '';"
+                ]
+            },
+            "designerId": "bf9e982c-144f-4910-aebb-b183b3eb83c3"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "removeAll",
+                "implHandler": [
+                    "var store = Ext.data.StoreManager.lookup('systemVarStoreID');\r",
+                    "while(store.data.length > 0){\r",
+                    "    store.removeAt(0);\r",
+                    "    store.sync();\r",
+                    "}"
+                ]
+            },
+            "designerId": "7ad3ade1-663d-45c8-8255-f77f770a1061"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "getValue",
+                "designer|params": [
+                    "sysKey, defaultValue"
+                ],
+                "implHandler": [
+                    "var store = Ext.data.StoreManager.lookup('systemVarStoreID');\r",
+                    "var index = store.find('key', sysKey);\r",
+                    "if(index >= 0){\r",
+                    "    return store.getAt(index).data.value;\r",
+                    "}else\r",
+                    "return defaultValue;"
+                ]
+            },
+            "designerId": "8eeeaff9-4556-41c6-9976-a0ab88e9012d"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "setValue",
+                "designer|params": [
+                    "sysKey, sysValue"
+                ],
+                "implHandler": [
+                    "\r",
+                    "if (sysValue !== null) {\r",
+                    "    var store = Ext.data.StoreManager.lookup('systemVarStoreID');\r",
+                    "    var index = store.findExact('key', sysKey);\r",
+                    "    if(index >= 0){\r",
+                    "        store.removeAt(index);\r",
+                    "        store.sync();\r",
+                    "    }\r",
+                    "\r",
+                    "\r",
+                    "    var sysVar = new MyApp.model.systemVarModel({\r",
+                    "        key: sysKey, \r",
+                    "        value: sysValue\r",
+                    "    });\r",
+                    "    store.add(sysVar);\r",
+                    "    store.sync();\r",
+                    "}"
+                ]
+            },
+            "designerId": "272e4b45-7ed0-4566-b332-5a640f9c75d5"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onTestConnectIDTap",
+                "implHandler": [
+                    "\r",
+                    "var values = this.getSettingForm().getValues();\r",
+                    "console.log(values);\r",
+                    "var proxy = values.System_ProxyRootURL;\r",
+                    "var loginWay = values.loginWay;\r",
+                    "\r",
+                    "var username;\r",
+                    "if (loginWay === 'mobilePhone')\r",
+                    "username = values.System_mobilePhone;\r",
+                    "else\r",
+                    "username = values.System_email;\r",
+                    "\r",
+                    "console.log(values);\r",
+                    "\r",
+                    "var password = values.System_Password;\r",
+                    "var remember = values.System_RememberPass;\r",
+                    "var timeout = values.System_ProxyTimeout;\r",
+                    "\r",
+                    "this.testLinkSave(proxy, timeout, username, password, remember);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#testConnectID"
+            },
+            "designerId": "4c35841e-362d-4631-91b8-43ad35af82b5"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "settingForm",
+                "selector": "#settingFormID"
+            },
+            "designerId": "8c942751-88c8-45dd-aee3-1c50bc20a189"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onLoginWayIDChange",
+                "implHandler": [
+                    "if (newValue === 'mobilePhone') {\r",
+                    "    this.getMobilePhone().setHidden(false);\r",
+                    "    this.getEmail().setHidden(true);\r",
+                    "} else {\r",
+                    "    this.getMobilePhone().setHidden(true);\r",
+                    "    this.getEmail().setHidden(false);\r",
+                    "}"
+                ],
+                "name": "change",
+                "designer|targetType": "Ext.field.Select",
+                "designer|controlQuery": "#loginWayID"
+            },
+            "designerId": "1ab4a3ee-39de-4444-a776-1aedaed1d2c0"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mobilePhone",
+                "selector": "#SettingSystem_mobilePhone"
+            },
+            "designerId": "61d76814-3664-4663-ab18-6a504e0f4f48"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "email",
+                "selector": "#SettingSystem_email"
+            },
+            "designerId": "a84d0a36-c3d9-412f-9104-acb7c09162bb"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onSettingSaveButtonTap",
+                "implHandler": [
+                    "var values = this.getSettingForm().getValues();\r",
+                    "\r",
+                    "this.save(values);\r",
+                    "\r",
+                    "this.getExecuteView().pop();"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#settingSaveButton"
+            },
+            "designerId": "cbea3aae-79eb-465b-a3b8-6a1132d61909"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onSettingFormIDShow",
+                "implHandler": [
+                    "this.readSystemConfig();\r",
+                    "\r",
+                    "console.log(\"settingForm Show systemConfig\", systemConfig);\r",
+                    "\r",
+                    "/*  测试不成功\r",
+                    "this.getSettingForm().setRecord(systemConfig);\r",
+                    "*/\r",
+                    "\r",
+                    "this.getSettingForm().setValues({\r",
+                    "    System_ProxyRootURL: systemConfig.System_ProxyRootURL\r",
+                    "\r",
+                    "    /* ToDo 增加其他系统参数 */\r",
+                    "});\r",
+                    ""
+                ],
+                "name": "show",
+                "designer|targetType": "Ext.form.Panel",
+                "designer|controlQuery": "#settingFormID"
+            },
+            "designerId": "52486bb7-a6a8-4e2a-b8e1-36b6bce21b3b"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "executeView",
+                "selector": "#executeViewID"
+            },
+            "designerId": "ed48a31f-ac5a-4e9d-980b-30193f45c609"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "setSystemConfigByForm",
+                "implHandler": [
+                    "var settingFrm = Ext.create('MyApp.view.settingView');\r",
+                    "this.getExecuteView().push(settingFrm);"
+                ]
+            },
+            "designerId": "0c7554d2-ee75-400e-adb8-3abe4beebfe3"
+        }
+    ]
+}

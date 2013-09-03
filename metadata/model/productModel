@@ -1,0 +1,78 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "productModel"
+    },
+    "designerId": "75dc59d9-f10a-4301-bca8-0dfb5471c296",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "product_sku",
+                "type": "string"
+            },
+            "designerId": "f8b66b61-2386-4a92-8173-0835adcb7fbe"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "product_name",
+                "type": "string"
+            },
+            "designerId": "e6f9a518-f44f-47a7-9453-15c44dd8346e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "product_price",
+                "type": "float"
+            },
+            "designerId": "0c9e3eba-dc0d-484e-ae06-0c55e815dbdf"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "product_img",
+                "type": "string"
+            },
+            "designerId": "99575b39-b67a-4372-8f5a-446e12db2d42"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "weigth_unit_display"
+            },
+            "designerId": "b1e0d9ca-d7cc-4b58-a024-15717d4bad41"
+        }
+    ]
+}

@@ -1,0 +1,197 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "loginController"
+    },
+    "designerId": "e2814f63-f7f9-4802-95fb-6ec70fca4a57",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onLoginWayIDChange",
+                "implHandler": [
+                    "if (newValue == 'mobilePhone') {\r",
+                    "    this.getMobilePhone().setHidden(false);\r",
+                    "    this.getEmail().setHidden(true);\r",
+                    "} else {\r",
+                    "    this.getMobilePhone().setHidden(true);\r",
+                    "    this.getEmail().setHidden(false);\r",
+                    "}\r",
+                    ""
+                ],
+                "name": "change",
+                "designer|targetType": "Ext.field.Select",
+                "designer|controlQuery": "#loginFormLoginWayID"
+            },
+            "designerId": "9f15e4cc-46ec-4c68-b24d-6b28a6bcde61"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mobilePhone",
+                "selector": "#loginFormMobilePhoneID"
+            },
+            "designerId": "e8c9efba-6417-48a3-8dac-d5ff1e5863fb"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "email",
+                "selector": "#loginFormEmailID"
+            },
+            "designerId": "f2316e8a-96f3-4a65-90aa-94a42df4c2bf"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onLoginLoginBtnTap",
+                "implHandler": [
+                    "var values = this.getLoginForm().getValues();\r",
+                    "\r",
+                    "var username = null;\r",
+                    "if (values.loginWay == 'mobilePhone')\r",
+                    "username = values.mobilePhone;\r",
+                    "else\r",
+                    "username = values.email;\r",
+                    "\r",
+                    "var password = values.passwd;\r",
+                    "\r",
+                    "this.successLogin(\"http://localhost/ecshop/mobile/mobileService.php\", username,password);\r",
+                    "\r",
+                    "if (loginAccount == null)\r",
+                    "alert(\"用户名/密码错误，请重新输入！\");\r",
+                    "else\r",
+                    "this.getExecuteView().pop();\r",
+                    "\r",
+                    "\r",
+                    ""
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "button[itemId=loginLoginBtn]"
+            },
+            "designerId": "4e8bf7f4-509e-4f3a-a306-117b57f5df81"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onSettingButtonTap",
+                "implHandler": [
+                    "var settingForm = Ext.create('MyApp.view.settingForm');\r",
+                    "settingForm.setRecord(MyApp.systemConfig);\r",
+                    "this.getExecuteView().push(settingForm);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "button[itemId=loginSettingBtn]"
+            },
+            "designerId": "8bcf75bd-193c-450e-9f4c-18693e2f0bfc"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "loginForm",
+                "selector": "#LoginFormID"
+            },
+            "designerId": "b474d060-c3e8-4b8c-8756-5e3bf010cd13"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "executeView",
+                "selector": "#executeViewID"
+            },
+            "designerId": "aa7d18c3-851a-403b-9c4f-326a471fe2e4"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "successLogin",
+                "designer|params": [
+                    "url,username,password"
+                ],
+                "implHandler": [
+                    "var servicePara = {\r",
+                    "    InterfaceName: 'Login',\r",
+                    "    SN:            '00000000001',\r",
+                    "    DATA_LAST_UPDATE_DATETIME:  '20120101',\r",
+                    "    USER_NAME:      username,\r",
+                    "    USER_PWD:            password\r",
+                    "};\r",
+                    "\r",
+                    "var executeView = this.getExecuteView();\r",
+                    "loginSuccess = function(response) {\r",
+                    "    //登录验证成功\r",
+                    "\r",
+                    "    console.log(\"response:\", response.responseText);\r",
+                    "    if (response.responseText) {\r",
+                    "        var retValue = Ext.decode(response.responseText);\r",
+                    "\r",
+                    "        console.log(retValue);\r",
+                    "        if (retValue.success == true) {\r",
+                    "            //将用户状态记录到全局帐户变量中保存\r",
+                    "            loginAccount = retValue;\r",
+                    "\r",
+                    "            console.log(\"successLogin: Login Account\", loginAccount);\r",
+                    "        }\r",
+                    "        \r",
+                    "        return;\r",
+                    "\r",
+                    "    } else {\r",
+                    "        alert(\"服务器错误！\");\r",
+                    "    }\r",
+                    "\r",
+                    "};\r",
+                    "\r",
+                    "this.getApplication().getController('webServiceController').service(servicePara, loginSuccess);"
+                ]
+            },
+            "designerId": "595f008f-40ef-46d1-9c90-dbee3214b1b5"
+        }
+    ]
+}

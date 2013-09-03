@@ -1,0 +1,232 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "productController"
+    },
+    "designerId": "dcc7d33c-f511-47a0-8289-1a8acc0fe89c",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "productListList",
+                "selector": "#productListListID"
+            },
+            "designerId": "337486fe-53e1-4994-8c1c-c2e52f824b34"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onProductListListIDActivate",
+                "implHandler": [
+                    "var store = Ext.data.StoreManager.lookup('goodsStoreID');\r",
+                    "\r",
+                    "store.setProxy({\r",
+                    "    url:   systemConfig.System_ProxyRootURL,\r",
+                    "    extraParams: {\r",
+                    "        InterfaceName:    'GoodsDataUpdate',\r",
+                    "        SN:               '0000000002',\r",
+                    "        USER_ID:          loginAccount.USER_ID\r",
+                    "    },\r",
+                    "    callbackKey:          'callback',\r",
+                    "\r",
+                    "    callback: function(records, operation, success) {\r",
+                    "        console.log(records, success, operation);\r",
+                    "    }\r",
+                    "});\r",
+                    "\r",
+                    "console.log(store);\r",
+                    "\r",
+                    "store.load();"
+                ],
+                "name": "activate",
+                "designer|targetType": "Ext.dataview.NestedList",
+                "designer|controlQuery": "#productListListID"
+            },
+            "designerId": "491549c1-3a64-4d85-8b2c-be3966894a3f"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onMybutton8Tap",
+                "implHandler": [
+                    "alert(\"Product Button\");"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#mybutton8"
+            },
+            "designerId": "437891ec-fa0f-48dc-9f51-c4f5ecc420d3"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "productSelected",
+                "designer|params": [
+                    "frm"
+                ],
+                "implHandler": [
+                    "//设置DetailCard\r",
+                    "\r",
+                    "var proListFrm = Ext.create('MyApp.view.productView');\r",
+                    "//var detailList = proListFrm.getComponent('productList');\r",
+                    "\r",
+                    "//detailList.setDetailCard(frm);\r",
+                    "//this.getExecuteView().getNavigationBar().hide();\r",
+                    "this.getExecuteView().push(proListFrm);"
+                ]
+            },
+            "designerId": "85c1f667-d7ca-4159-9e2f-75429ad3af57"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "executeView",
+                "selector": "#executeViewID"
+            },
+            "designerId": "388cd615-0214-46c5-8097-b499b2e5e1c7"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onProductListLeafItemTap",
+                "implHandler": [
+                    "\r",
+                    "console.log(record.data);\r",
+                    "var unitPrice = record.data.product_price + \"元\";\r",
+                    "nestedlist.getDetailCard().setValues({\r",
+                    "    'productName': record.data.product_name,\r",
+                    "    'productSKU': record.data.product_sku,\r",
+                    "    'productSalePrice': unitPrice\r",
+                    "});\r",
+                    "\r",
+                    "/// Ext.getCmp('btnBuyID').hidden();"
+                ],
+                "name": "leafitemtap",
+                "designer|targetType": "Ext.dataview.NestedList",
+                "designer|controlQuery": "nestedlist#productList"
+            },
+            "designerId": "a917055b-5aa9-4658-ac89-16ac7a531a2c"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onSelectProductCancelBtnTap",
+                "implHandler": [
+                    "this.getExecuteView().pop();"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "button[itemId=selectProductCancelBtn]"
+            },
+            "designerId": "a18e8456-72ad-49aa-89c6-53ebee6f9a51"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "displayProduct",
+                "implHandler": [
+                    "var dispProductFrm = Ext.create('MyApp.view.productDetailView');\r",
+                    "this.getExecuteView().push(dispProductFrm);"
+                ]
+            },
+            "designerId": "741e0995-9bff-4015-b9d3-04992d4e380d"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onBtnBuyIDTap",
+                "implHandler": [
+                    "var store =  Ext.getStore('orderDetailStoreID');\r",
+                    "console.log(\"buyIDTap\", store);\r",
+                    "\r",
+                    "var values = this.getProductDetailView().getValues();\r",
+                    "console.log(\"values:\", values);\r",
+                    "\r",
+                    "var rec = {\r",
+                    "    'goodsID': values.productSKU,\r",
+                    "    'buyCount': values.fsBuyCount,\r",
+                    "    'unitPrice': values.productSalePrice,\r",
+                    "    'goodsName': values.productName\r",
+                    "};\r",
+                    "\r",
+                    "console.log(\"rec\", rec);\r",
+                    "\r",
+                    "store.add(rec);\r",
+                    "var orderItem = store.getAt(0);\r",
+                    "if (!orderItem) {\r",
+                    "    store.sync();\r",
+                    "}\r",
+                    "\r",
+                    "this.getExecuteView().pop();"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "button[itemId=btnBuyID]"
+            },
+            "designerId": "e0822b85-0d74-4418-acb8-becc998d4fa7"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "productDetailView",
+                "selector": "#productDetailViewID"
+            },
+            "designerId": "2aad39f9-5d0a-4294-98ca-a453f9956bea"
+        }
+    ]
+}

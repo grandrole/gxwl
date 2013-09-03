@@ -1,0 +1,92 @@
+.cls, .clr{
+	clear: both;
+}
+
+/*Default layout*/
+.vmt-block{
+	clear: both;
+	height: 80px;
+}
+.left-block{
+	float: left;
+}
+.right-block{
+	float: right;
+}
+.block10{
+	width: 10%;
+}
+.block90{
+	width: 90%;
+}
+.block15{
+	width: 15%;
+}
+.block85{
+	width: 85%;
+}
+.block20{
+	width: 20%;
+}
+.block50{
+	width: 50%;
+}
+.block30{
+	width: 30%;
+}
+.block70{
+	width: 70%;
+}
+.block65{
+	width: 65%;
+}
+.block35{
+	width: 35%;
+}
+.no-overflow{
+	overflow: hidden;
+}
+.title{
+	font-weight: bold;
+}
+.small{
+	font-size: 90%;
+	color: #ccc;
+}
+.description{
+	font-style: italic;
+}
+.important{
+	color: red !important;
+}
+.ok{
+	color: green !important;
+}
+
+/*Extension List*/
+#MainListList{
+	background-color: #FFFFFF;
+	
+}
+.extensions{
+	margin: 0 auto;
+	text-align: center;
+}
+.extension{
+	width: 130px;
+	height: 130px;
+	overflow: hidden;
+	text-align: center;
+	float: left;
+	margin: 10px 20px 20px 0;
+}
+.extension .icon{
+	width: 100%;
+	height: 96px;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+.extension .icon img{
+	width: 96px;
+}
+.extension .name{text-shadow: 0 -0.08em 0 rgba(118, 109, 109, 0.5);}

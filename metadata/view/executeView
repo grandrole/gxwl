@@ -1,0 +1,39 @@
+{
+    "type": "Ext.navigation.View",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": "executeViewID",
+        "designer|userClassName": "executeView",
+        "designer|initialView": true
+    },
+    "designerId": "86a3af3c-302d-415a-b6fe-0d6178f62e6e",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "1d2bc728-8ae3-4814-b659-42080a6f95f9",
+            "masterInstanceId": "d4ab38ba-7f10-4652-aee2-e3f9ca0340e2"
+        },
+        {
+            "type": "Ext.navigation.Bar",
+            "reference": {
+                "name": "navigationBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "disabled": null,
+                "docked": "top"
+            },
+            "designerId": "16768076-6c1b-4b50-bcc9-abc618796d83"
+        }
+    ]
+}

@@ -1,0 +1,103 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "fullscreen": true,
+        "designer|userClassName": "productView",
+        "layout": "vbox"
+    },
+    "designerId": "a16da536-e3a8-4b32-a6f7-58194c0d2bb3",
+    "cn": [
+        {
+            "type": "Ext.dataview.NestedList",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "container|animation": null,
+                "docked": null,
+                "itemId": "productList",
+                "ui": "light",
+                "scrollable": "vertical",
+                "detailCard": "productDetailView",
+                "displayField": "product_name",
+                "store": "productStoreID",
+                "title": null,
+                "useTitleAsBackText": null
+            },
+            "designerId": "b6a83406-3ca5-4f42-a8bb-02c4a456dcf2",
+            "cn": [
+                {
+                    "type": "Ext.TitleBar",
+                    "reference": {
+                        "name": "toolbar",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "hidden": true
+                    },
+                    "designerId": "123f25a9-0212-447c-a9fd-2e8254e293c4"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom"
+            },
+            "designerId": "526a711e-5b17-47e7-b139-3dc8536bb018",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "selectProductCancelBtn",
+                        "text": "取消"
+                    },
+                    "designerId": "fbadfc1d-83c3-4aa0-99bd-0c201df5d149"
+                },
+                {
+                    "type": "Ext.Spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "designerId": "e7b7a4e8-f593-43d9-ad9f-27d64b012bcb"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "hidden": false,
+                        "id": "btnBuyID",
+                        "ui": "confirm",
+                        "text": "购买"
+                    },
+                    "designerId": "d04ec041-13d8-4193-adfb-99319add5194"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,110 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "ui": "",
+        "designer|userClassName": "shoppingCartView",
+        "layout": "vbox",
+        "scrollable": "vertical"
+    },
+    "designerId": "f70c930a-0ed9-4192-85e7-8ad628a076bb",
+    "cn": [
+        {
+            "type": "Ext.dataview.DataView",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "ui": "",
+                "store": "orderDetailStoreID"
+            },
+            "designerId": "4e45d3d3-13bf-4f4b-bd91-93d46a61c25c",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "implHandler": [
+                            "<div>{goodsName}    {unitPrice}    {buyCount}</div>"
+                        ],
+                        "designer|displayName": "itemTpl"
+                    },
+                    "designerId": "5a909bfd-6694-4d74-a14a-a1aeb39dc887"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom"
+            },
+            "designerId": "30f33d17-7398-4432-ab6a-01ed9533ce40",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "btnSubmitOrder",
+                        "text": "提交订单"
+                    },
+                    "designerId": "a902860a-44b0-4f1b-a3ce-ed5bbabf4620"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "btnBuyGoods",
+                        "text": "购买商品"
+                    },
+                    "designerId": "2f5c87ca-5109-48bc-9a59-c0ec3734b6c3"
+                },
+                {
+                    "type": "Ext.Spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "designerId": "33a02fe3-6381-46ab-a99f-03ba1b657729"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "btnCancel",
+                        "text": "取消"
+                    },
+                    "designerId": "e606bc74-d512-4402-a6fc-766f76566af9"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "orderController"
+    },
+    "designerId": "ef14239a-2dcc-41dd-89a2-e5aa17b3f275",
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "displayShoppingCartView",
+                "implHandler": [
+                    "var frm = Ext.create('MyApp.view.shoppingCartView');\r",
+                    "this.getExecuteView().push(frm);\r",
+                    ""
+                ]
+            },
+            "designerId": "f8569d04-2152-4580-a916-ce81d9242ffc"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "executeView",
+                "selector": "#executeViewID"
+            },
+            "designerId": "01a5e8b5-c473-46f6-9980-0765ea60d8fb"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onBtnBuyGoodsTap",
+                "implHandler": [
+                    "console.log(\"enter continue buy...\");\r",
+                    "this.getExecuteView().pop();\r",
+                    "\r",
+                    "//this.getApplication().getController('orderController').displayShoppingCartView();\r",
+                    "var proListFrm = Ext.create('MyApp.view.productView');\r",
+                    "this.getExecuteView().push(proListFrm);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "button[ItemId=btnBuyGoods]"
+            },
+            "designerId": "88a78301-2702-4fdb-a82d-a7d1f508bbdf"
+        }
+    ]
+}

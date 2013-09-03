@@ -1,0 +1,16 @@
+{
+    "applicationName": "champion",
+    "applicationId": "com.grandrole.champion",
+    "bundleSeedId": "KPXFEPZ6EF",
+    "versionString": "1.0",
+    "iconName": "",
+    "inputPath": "./",
+    "outputPath": "../build/",
+    "configuration": "Release",
+    "platform": "iOS",
+    "deviceType": "iPhone",
+    "certificatePath": "C:\\Users\\caoj\\Desktop\\ios Develop",
+    "certificateAlias": "ios_development.cer",
+    "sdkPath": "C:\\Users\\caoj\\AppData\\Local\\Android\\android-sdk",
+    "androidAPILevel": "7"
+}
